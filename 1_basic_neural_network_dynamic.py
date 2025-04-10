@@ -22,8 +22,8 @@ Plot 7,8,9 show the evolution of some of the parameter values.
 SPEEDING UP THE EXECUTION:
 Updating all plot at each iteration takes a lot of time.
 To speed up execution, you can try the following:
-- During execution: press the right arrow to not plot the next 100 iterations, which speeds up those iterations by a
-  factor of 10.
+- During execution: press the right arrow on your keyboard to not plot the next 100 iterations, which speeds up those 
+  iterations by a factor of 10.
 - Before execution: set the variables 'show_grad' and/or 'show_weights' to 'False'. This will speed up execution by not
   showing the plots 4-6 and or 7-9 during execution but only after execution. I encourage you to choose 'show_grad=True'
   and 'show_weights=False', as the gradient plots give more information during execution.
