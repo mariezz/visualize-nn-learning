@@ -19,10 +19,10 @@ If you find errors or typos, or if there are things that are unclear, please let
 
 ## Contents
 This repository contains:
-- notebooks (files with the .ipynb extension): they guide you through the implementation, provide simple visualizations, and let you experiment by yourself;
-- accompanying documents (pdf files): they introduce the notebooks, help you undestand the implementation, describe insightful experiments, and explain the results;
-- visualization code (python file): produces more advanced visualizations (animated versions of the visualizations in the notebooks);
-- videos that are accelerated recordings of the output of the visualization code;
+- **notebooks** (files with the .ipynb extension): they guide you through the implementation, provide simple visualizations, and let you experiment by yourself;
+- **accompanying documents** (pdf files): they introduce the notebooks, help you undestand the implementation, describe insightful experiments, and explain the results;
+- **visualization code** (python file): produces more advanced visualizations (animated versions of the visualizations in the notebooks);
+- **videos** that are accelerated recordings of the output of the visualization code;
 - a file "basic_neural_network_help_functions.py" that contains functions that are used by the notebooks and the visualization code.
 
 The files whose names start with "1" belong to the first experiment, which introduces a basic neural network and analyzes its learning process. I suggest the following order:
