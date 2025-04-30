@@ -23,7 +23,8 @@ This repository contains:
 - **accompanying documents** (pdf files): they introduce the notebooks, help you undestand the implementation, describe insightful experiments, and explain the results;
 - **visualization code** (python file): produces more advanced visualizations (animated versions of the visualizations in the notebooks);
 - **videos** that are accelerated recordings of the output of the visualization code;
-- a file "basic_neural_network_help_functions.py" that contains functions that are used by the notebooks and the visualization code.
+- a file "basic_neural_network_help_functions.py" that contains functions that are used by the notebooks and the visualization code;
+- a file "requirements.txt" that contains a list of the required python packages.
 
 The files whose names start with "1" belong to the first experiment, which introduces a basic neural network and analyzes its learning process. I suggest the following order:
 - Read `1A_introduction_basic_neural_network.pdf` together with the first part of the notebook `1_basic_neural_network.ipynb`.
@@ -34,10 +35,16 @@ The files whose names start with "1" belong to the first experiment, which intro
 
 ## How to run the code
 
-Run the notebooks:
-- You can use jupyter or an IDE like VS Code to run the notebooks on your computer. You will need to have `matplotlib`,  `jupyterlab`, and `notebook` installed. The file with help functions must be in the same folder as the notebook.
-- Alternatively, you can upload the notebook in google colab, then upload the file with help functions (go to the session files in the left bar and upload the file there), and then run the notebook.
+Running the notebooks and the visualization code on your own computer:
+- The file with help functions should be in the same folder as the notebook and the visualization code.
+- You need to have `matplotlib`, `jupyterlab`, and `notebook` installed. You can install them in a virtual environment (to avoid installing them system-wide):
+    1. Create a python virtual environment in your current folder: `python -m venv venv_basic_nn`
+    2. Activate the virtual environment: `source venv_basic_nn/bin/activate` (Linux/macOS)
+    3. Install the required packages: `pip install -r requirements.txt`
+- You can then run jupyter with `jupyter notebook` and run the notebooks there.
+- Alternatively, you can use an IDE like VS Code to run the notebooks.
+- You can run the visualization code with `python 1_basic_neural_network_dynamic.py`
 
-Run the visualization code:
-- On your computer: you only need `matplotlib` installed and the file with help functions in the same folder.
+Running the notebooks online:
+- You can upload the notebooks in Google Colab, then upload the file with help functions (go to the session files in the left bar and upload the file there), and then run the notebook there.
 
