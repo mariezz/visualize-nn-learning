@@ -28,7 +28,7 @@ This repository contains:
 The files whose names start with "1" belong to the first experiment, which introduces a basic neural network and analyzes its learning process. I suggest the following order:
 - Read `1A_introduction_basic_neural_network.pdf` together with the first part of the notebook `1_basic_neural_network.ipynb`.
 - Read `1B_deeper_look_basic_neural_network.pdf` together with the second part of the first notebook.
-- Look at the dynamic visualizations. You can either watch the videos or run the visualization code `1_basic_neural_network_dynamic.py` yourself (and optionally experiment with the parameters and other aspects of the code). Read the **documentation** at the beginning of the file, it contains information about the figures and other interesting tips!
+- Look at the dynamic visualizations. You can either watch the videos (in particular the parts where the learning process is unstable) or run the visualization code `1_basic_neural_network_dynamic.py` yourself (and optionally experiment with the parameters and other aspects of the code). Read the **documentation** at the beginning of the file, it contains information about the figures and other interesting tips!
 
 [to be continued]
 
