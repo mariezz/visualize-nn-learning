@@ -45,6 +45,11 @@ VALUES YOU SHOULD TRY:
 (show_grad, show_weights) = (True, False)
     All plots will be shown at the end so you can look at them in detail after the execution.
 
+VIDEOS:
+The videos on GitHub show the (accelerated) executions
+    (f, h, learning_rate, epochs, show_grad, show_weights) = (f2, 8, 0.1, 1200, True, True)
+                                                         and (f1, 3, 1, 1000, True, True)
+
 """
 
 

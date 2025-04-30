@@ -22,12 +22,13 @@ This repository contains:
 - notebooks (files with the .ipynb extension): they guide you through the implementation, provide simple visualizations, and let you experiment by yourself;
 - accompanying documents (pdf files): they introduce the notebooks, help you undestand the implementation, describe insightful experiments, and explain the results;
 - visualization code (python file): produces more advanced visualizations (animated versions of the visualizations in the notebooks);
+- videos that are accelerated recordings of the output of the visualization code;
 - a file "basic_neural_network_help_functions.py" that contains functions that are used by the notebooks and the visualization code.
 
 The files whose names start with "1" belong to the first experiment, which introduces a basic neural network and analyzes its learning process. I suggest the following order:
 - Read `1A_introduction_basic_neural_network.pdf` together with the first part of the notebook `1_basic_neural_network.ipynb`.
 - Read `1B_deeper_look_basic_neural_network.pdf` together with the second part of the first notebook.
-- Run the visualization code `1_basic_neural_network_dynamic.py`. Read the **documentation** at the beginning of the file!
+- Look at the dynamic visualizations. You can either watch the videos or run the visualization code `1_basic_neural_network_dynamic.py` yourself (and optionally experiment with the parameters and other aspects of the code). Read the **documentation** at the beginning of the file, it contains information about the figures and other interesting tips!
 
 [to be continued]
 
