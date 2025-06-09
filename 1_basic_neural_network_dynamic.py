@@ -7,7 +7,7 @@ Below you can find explanations about the figure and tips to speed up the execut
 THE FIGURE:
 At the top of the figure, you can see the iteration number and the elapsed time.
 Plot 1 shows the dataset, this plot is static and doesn't change during or after execution.
-Plot 2 shows the learned fonction (which is updated after epoch) together with the target function.
+Plot 2 shows the learned fonction (which is updated after each epoch) together with the target function.
 Plot 3 shows the evolution of the training and test errors.
 Plot 4 shows the evolution of the norm of the gradient.
 Plot 5 shows the values of the angles between consecutive gradients.
@@ -188,7 +188,6 @@ def visualize_gradients(points, updates):
     # ax_grad_visu.margins(0.1)  # margins don't solve the problem when arrows are vertical/horizontal and aligned
     ax_grad_visu.axis("off")
     ax_grad_visu.axis("equal")
-    # TODO: solve problem of not fully visible arrows
 
 
 def visualize_gradients_final():
@@ -208,7 +207,7 @@ def plot_weights_init():
     for k in range(len(index_lists[0])):
         (i,j) = index_lists[0][k]
         if i >= h - 1 or j >= 2: continue  # skip if the indexes are out of bounds
-        lines_u1[k], = ax_U1.plot(evolution_U[i, j, :], label=f"U{i}{j}")  # plot the evolution of Uij
+        lines_u1[k], = ax_U1.plot(evolution_U[i, j, :], label=f"U[{i},{j}]")  # plot the evolution of Uij
     ax_U1.set_xlabel("iterations")
     ax_U1.set_ylabel("U")
     ax_U1.legend()
@@ -217,7 +216,7 @@ def plot_weights_init():
     for k in range(len(index_lists[1])):
         (i,j) = index_lists[1][k]
         if i >= h - 1 or j >= 2: continue  # skip if the indexes are out of bounds
-        lines_u2[k], = ax_U2.plot(evolution_U[i, j, :], label=f"U{i}{j}")  # plot the evolution of Uij
+        lines_u2[k], = ax_U2.plot(evolution_U[i, j, :], label=f"U[{i},{j}]")  # plot the evolution of Uij
     ax_U2.set_xlabel("iterations")
     ax_U2.set_ylabel("U")
     ax_U2.legend()
@@ -279,7 +278,6 @@ if __name__ == '__main__':
 
     # DEFAULT VALUES: f1, 3, 1, 1000, True, False
     # or f2, 8, 0.1, 1200, True, False
-    # + give info about what is interesting (TODO)
 
     f = f1  # Target function, f1 or f2
     h = 3  # Number of hidden neurons, e.g. 2, 3, 5, 8, ...
